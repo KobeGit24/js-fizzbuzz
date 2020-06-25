@@ -1,3 +1,7 @@
+var btn = document.getElementById('btn');
+btn.addEventListener('click', function () {
+    document.getElementById('welcome').className = "hidden";
+    document.getElementById('play').classList.remove('hidden');
 for (var i = 0; i < 100; i++) {
     var number = i + 1;
     var three = number%3==0;
@@ -15,3 +19,4 @@ for (var i = 0; i < 100; i++) {
         document.getElementById('numeri').innerHTML += '<li class="normal">' + number + '</li>'; 
     }
 }
+});
