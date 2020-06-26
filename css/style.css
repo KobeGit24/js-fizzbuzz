@@ -35,7 +35,7 @@ h1 span {
 }
 
 button {
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
     color: #ffffff;
     background-color: goldenrod;
@@ -80,6 +80,15 @@ button:hover {
     font-weight: bold;
 }
 
+.zoom {
+    transition: transform 0.3s ease 0.1s;
+  }
+  
+  .zoom:hover {
+      cursor: pointer;
+    transform: scale(1.3);
+  }
+
 .normal {
     font-size: 18px;
     font-weight: bold; 
@@ -93,11 +102,13 @@ li {
     padding: 10px;
 }
 
-#numeri {
+.FizzBuzz {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
+    width: 70%;
+    height: 100%;
 }
 
 
