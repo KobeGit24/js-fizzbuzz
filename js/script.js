@@ -4,15 +4,13 @@ btn.addEventListener('click', function () {
     document.getElementById('play').classList.remove('hidden');
 for (var i = 0; i < 100; i++) {
     var number = i + 1;
-    var three = number%3==0;
-    var five = number%5==0;
-    if (three && five) {
+    if (number%15==0) {
         document.getElementById('numeri').innerHTML += '<li class="blue zoom">FizzBuzz!!</li>';
     }
-    else if (three) {
+    else if (number%3==0) {
         document.getElementById('numeri').innerHTML += '<li class="red zoom">Fizz</li>';    
     } 
-    else if (five) {
+    else if (number%5==0) {
         document.getElementById('numeri').innerHTML += '<li class="green zoom">Buzz</li>';
     } 
     else {
